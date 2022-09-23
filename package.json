@@ -1,0 +1,43 @@
+{
+  "name": "quiz",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build:app": "npm run build --prefix ./app",
+    "start": "node server.js",
+    "postinstall": "npm install --prefix ./app",
+    "watch:app": "npm run start",
+    "deploy1": "deploy1.bat --prefix ./app",
+    "deploy2": "deploy2.bat --prefix ./app",
+    "deploy": "deploy1.bat && deploy2.bat"
+  },
+  "dependencies": {
+    "ably": "^1.2.29",
+    "core-js": "^3.8.3",
+    "dotenv": "^16.0.2",
+    "g-sheets-api": "^2.1.3",
+    "google-spreadsheet": "^3.3.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
