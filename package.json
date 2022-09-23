@@ -7,12 +7,12 @@
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "build:app": "npm run build --prefix ./app",
-    "start": "node server.js",
     "postinstall": "npm install --prefix ./app",
     "watch:app": "npm run start",
     "deploy1": "deploy1.bat --prefix ./app",
     "deploy2": "deploy2.bat --prefix ./app",
-    "deploy": "deploy1.bat && deploy2.bat"
+    "deploy": "deploy1.bat && deploy2.bat",
+	"start" : "node server.js"
   },
   "dependencies": {
     "ably": "^1.2.29",
