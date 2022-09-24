@@ -2,17 +2,16 @@
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
+  "main" : "server.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "build:app": "npm run build --prefix ./app",
     "postinstall": "npm install --prefix ./app",
-    "watch:app": "npm run start",
+    "watch:app": "node server.js",
     "deploy1": "deploy1.bat --prefix ./app",
     "deploy2": "deploy2.bat --prefix ./app",
-    "deploy": "deploy1.bat && deploy2.bat",
-	"start" : "node server.js"
+    "deploy": "deploy1.bat && deploy2.bat"
   },
   "dependencies": {
     "ably": "^1.2.29",
